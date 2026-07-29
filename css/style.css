@@ -1,0 +1,295 @@
+/* =========================================
+   COLOR PALETTE (used all over the page)
+   ========================================= */
+:root {
+  --dark: #1f2029;      /* almost-black, used for navbar/footer */
+  --slate: #2b2d42;     /* dark blue-grey, used for text */
+  --accent: #ef476f;    /* coral/pink accent color, used for buttons + highlights */
+  --gold: #ffd166;      /* warm yellow, used for small highlights */
+  --light-bg: #f7f7f2;  /* soft off-white background */
+  --muted: #6c6f7d;     /* grey text */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--slate);
+  background-color: #ffffff;
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.bg-accent {
+  background-color: var(--accent) !important;
+}
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+.main-navbar {
+  background-color: var(--dark);
+  padding: 16px 0;
+}
+
+.main-navbar .nav-link {
+  color: #d8d8de;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.main-navbar .nav-link:hover {
+  color: var(--gold);
+}
+
+.btn-cart {
+  background-color: transparent;
+  border: 1px solid #4a4c5a;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 30px;
+}
+
+.btn-cart:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+.hero {
+  min-height: 90vh;
+  background-color: var(--light-bg);
+  padding-top: 40px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 480px;
+  margin-bottom: 30px;
+}
+
+.hero-img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 30px;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.btn-accent:hover {
+  background-color: #d63b60;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   GENERAL SECTION SPACING
+   ========================================= */
+.section {
+  padding: 90px 0;
+}
+
+.bg-light-section {
+  background-color: var(--light-bg);
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading h2 {
+  font-weight: 700;
+}
+
+/* =========================================
+   FILTER BUTTONS
+   ========================================= */
+.btn-filter {
+  border: 1px solid #ddd;
+  background: #fff;
+  color: var(--slate);
+  padding: 6px 18px;
+  font-weight: 500;
+}
+
+.btn-filter.active,
+.btn-filter:hover {
+  background-color: var(--slate);
+  border-color: var(--slate);
+  color: #fff;
+}
+
+/* =========================================
+   PRODUCT CARDS
+   ========================================= */
+.product-card {
+  border: 1px solid #eee;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  background: #fff;
+}
+
+.product-card:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.product-body {
+  padding: 18px;
+}
+
+.product-category {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--muted);
+  letter-spacing: 1px;
+}
+
+.product-name {
+  font-weight: 600;
+  margin: 6px 0;
+}
+
+.product-price {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.btn-add-cart {
+  background-color: var(--slate);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 0;
+  width: 100%;
+  font-weight: 500;
+}
+
+.btn-add-cart:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+/* =========================================
+   FEATURES (about section)
+   ========================================= */
+.feature-icon {
+  font-size: 2.2rem;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+/* =========================================
+   NEWSLETTER
+   ========================================= */
+.newsletter {
+  padding: 70px 0;
+  background-color: var(--gold);
+}
+
+.newsletter h3 {
+  font-weight: 700;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+.footer {
+  background-color: var(--dark);
+  color: #d8d8de;
+  padding: 60px 0 20px;
+}
+
+.footer h5,
+.footer h6 {
+  color: #fff;
+}
+
+/* =========================================
+   CART PANEL (offcanvas)
+   ========================================= */
+.cart-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cart-item-info {
+  flex-grow: 1;
+}
+
+.qty-controls button {
+  width: 26px;
+  height: 26px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  line-height: 1;
+}
+
+.remove-item {
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+/* =========================================
+   RESPONSIVE TWEAKS
+   ========================================= */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.3rem;
+  }
+  .filter-bar .text-md-end {
+    text-align: left !important;
+    margin-top: 10px;
+  }
+}
