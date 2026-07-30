@@ -22,3 +22,13 @@ is saved in the browser's localStorage.
 - Bootstrap 5 (grid, navbar, offcanvas)
 - Vanilla JavaScript (ES6)
 - Bootstrap Icons
+- 
+## 👩‍💻 Author
+Radwa Ashraf
+**Radwa Ashraf**
+
+GitHub: https://github.com/Radwaashraf4
+
+Demo link:
+[https://radwaashraf4.github.io/onlinecoaching/
+](https://radwaashraf4.github.io/sneakers/)
